@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Pare from '../views/pare'
+import Pare from '../views/pare.vue'
+import PixivDown from '../views/pixivdown.vue'
 const routes = [
   {
     path: '/',
@@ -19,7 +20,13 @@ const routes = [
     path: '/pare',
     name: 'pare',
     component: Pare
-  }
+  },
+  {
+    path: '/pixiv/down',
+    name: 'PixivDown',
+    component: PixivDown
+  },
+
 ]
 
 const router = createRouter({

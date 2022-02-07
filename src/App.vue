@@ -1,7 +1,7 @@
 <template>
   <el-container
       class="layout-container-demo"
-      style="height: 500px; border: 1px solid #eee"
+      style="height: 70%; border: 1px solid #eee"
   >
     <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
       <el-row>
@@ -13,26 +13,26 @@
             <el-sub-menu index="1">
 
               <el-menu-item-group title="Pixiv">
-                <router-link to="/pare" tag="span">
+                <router-link to="/pare" tag='p'>
                   <el-menu-item index="1-1">
                     <div>
                       <download size="18" style="vertical-align: 5%"/>
-                      001
+                      Pixiv解析
                     </div>
                   </el-menu-item>
                 </router-link>
                 <el-menu-item index="1-2">
+                  <router-link to="/pixiv/down" tag='p'>
+
                   <div>
                     <download size="18" style="vertical-align: 5%"/>
-                    002
+                    Pixiv下载
                   </div>
+                  </router-link>
                 </el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
-            <el-menu-item>
 
-              123
-            </el-menu-item>
           </el-menu>
 
         </el-col>
@@ -40,11 +40,11 @@
     </el-aside>
 
     <el-container>
-      <el-header style="text-align: center; font-size: 12px">
-        鸢月P站图片代下系统
+      <el-header style="text-align: center; font-size: 24px">
+        <h1>鸢月P站图片代下系统</h1>
       </el-header>
 
-      <el-main>
+      <el-main style="height: 90%">
         <router-view></router-view>
       </el-main>
     </el-container>
